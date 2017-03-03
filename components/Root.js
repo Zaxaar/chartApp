@@ -9,22 +9,22 @@ import styles from './styles'
 
 import Header from './header/Header';
 import Footer from './footer/Footer';
-import ChartOne from './main/ChartOne';
-import ChartTwo from './main/ChartTwo';
-import ChartThree from './main/ChartThree';
+import SceneOne from './main/SceneOne';
+import SceneTwo from './main/SceneTwo';
+import SceneThree from './main/SceneThree';
 
 var Root = React.createClass({
 
   renderScene: function(route, navigator) {
-    if (route.name == 'ChartOne' ) {
-      return <ChartOne navigator={navigator}
+    if (route.name == 'SceneOne' ) {
+      return <SceneOne navigator={navigator}
        title={'Chart One'}/>
     }
-    if (route.name == 'ChartTwo') {
-      return <ChartTwo navigator={navigator} title={'Chart Two'}/>
+    if (route.name == 'SceneTwo') {
+      return <SceneTwo navigator={navigator} title={'Chart Two'}/>
     }
-    if (route.name== 'ChartThree') {
-      return <ChartThree navigator={navigator} title={'Chart Three'}/>
+    if (route.name== 'SceneThree') {
+      return <SceneThree navigator={navigator} title={'Chart Three'}/>
     }
   },
 
@@ -38,7 +38,7 @@ var Root = React.createClass({
       <View style={[styles.body]}>
         <Header />
         <Navigator
-          initialRoute={{name: 'ChartOne'}}
+          initialRoute={{name: 'SceneOne'}}
           renderScene={this.renderScene}
           configureScene={this.configureScene}
         />

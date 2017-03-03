@@ -27,16 +27,16 @@ var Navigation = React.createClass({
   render: function() {
     return (
       <View style={styles.navigation}>
-        <TouchableOpacity onPress={()=>this.navigate('ChartOne')}>
-          <Text style={this.addStyle('ChartOne')}> Chart I</Text>
+        <TouchableOpacity onPress={()=>this.navigate('SceneOne')}>
+          <Text style={this.addStyle('SceneOne')}> Chart I</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=>this.navigate('ChartTwo')}>
-          <Text style={this.addStyle('ChartTwo')}> Chart II</Text>
+        <TouchableOpacity onPress={()=>this.navigate('SceneTwo')}>
+          <Text style={this.addStyle('SceneTwo')}> Chart II</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=>this.navigate('ChartThree')}>
-          <Text style={this.addStyle('ChartThree')}> Chart III</Text>
+        <TouchableOpacity onPress={()=>this.navigate('SceneThree')}>
+          <Text style={this.addStyle('SceneThree')}> Chart III</Text>
         </TouchableOpacity>
       </View>
     )

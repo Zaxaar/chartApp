@@ -6,24 +6,25 @@ import {
 } from 'react-native';
 import styles from './styles';
 
-import Navigation from './Navigation'
+import Navigation from './Navigation';
+import ChartOne from './charts/ChartOne';
 
-var ChartTwo = React.createClass({
+var SceneOne = React.createClass({
 
   render: function() {
     return (
       <View style={styles.mainWrapper}>
         <Navigation navigator={this.props.navigator}/>
         <View style={styles.mainContent}>
-          <Text style={styles.title}> {this.props.title} </Text>
+          <Text style={styles.title}>  {this.props.title} </Text>
           <Text style={styles.paragraph}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Popular GitHub repositories.
           </Text>
+          <ChartOne />
         </View>
       </View>
     )
   }
 })
 
-export default ChartTwo
+export default SceneOne

@@ -1,13 +1,15 @@
 import React from 'react';
 import {
+  TouchableHighlight,
   View,
   Text
 } from 'react-native';
 import styles from './styles';
 
-import Navigation from './Navigation'
+import Navigation from './Navigation';
+import ChartTwo from './charts/ChartTwo';
 
-var ChartThree = React.createClass({
+var SceneTwo = React.createClass({
 
   render: function() {
     return (
@@ -16,13 +18,13 @@ var ChartThree = React.createClass({
         <View style={styles.mainContent}>
           <Text style={styles.title}> {this.props.title} </Text>
           <Text style={styles.paragraph}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Simple line chart with sample data.
           </Text>
+          <ChartTwo />
         </View>
       </View>
     )
   }
 })
 
-export default ChartThree
+export default SceneTwo

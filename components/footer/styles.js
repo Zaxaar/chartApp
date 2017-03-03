@@ -13,7 +13,7 @@ var styles = StyleSheet.create({
   footerText: {
     fontFamily: 'Verdana',
     fontSize: 12,
-    fontWeight: '400',
+    fontWeight: '600',
     color: colors.white,
   }
 })
