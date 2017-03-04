@@ -17,8 +17,7 @@ var Root = React.createClass({
 
   renderScene: function(route, navigator) {
     if (route.name == 'SceneOne' ) {
-      return <SceneOne navigator={navigator}
-       title={'Chart One'}/>
+      return <SceneOne navigator={navigator} title={'Chart One'}/>
     }
     if (route.name == 'SceneTwo') {
       return <SceneTwo navigator={navigator} title={'Chart Two'}/>

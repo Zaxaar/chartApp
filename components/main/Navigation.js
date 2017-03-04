@@ -8,18 +8,24 @@ import styles from './styles'
 
 var Navigation = React.createClass({
 
-  navigate: function(routeName) {
-    return this.props.navigator.push({
-      name: routeName
-    })
-  },
-
-  addStyle: function(routeName){
+  currentRoute: function() {
     let routeStack = this.props.navigator.state.routeStack;
     let currentRouteIndex = routeStack.length-1;
 
+    return routeStack[currentRouteIndex]
+  },
+
+  navigate: function(routeName) {
+    if( this.currentRoute().name !== routeName ){
+      return this.props.navigator.push({
+        name: routeName
+      })
+    }
+  },
+
+  addStyle: function(routeName){
     return (
-      routeStack[currentRouteIndex].name == routeName
+      this.currentRoute().name == routeName
       ? styles.navigationItemActive : styles.navigationItem
     )
   },
