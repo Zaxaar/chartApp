@@ -7,9 +7,9 @@ import {
 import styles from './styles';
 
 import Navigation from './Navigation';
-import ChartThree from './charts/ChartThree';
+import List from './list/List';
 
-var SceneThree = React.createClass({
+var SceneFour = React.createClass({
 
   render: function() {
     return (
@@ -18,13 +18,13 @@ var SceneThree = React.createClass({
         <View style={styles.mainContent}>
           <Text style={styles.title}> {this.props.title} </Text>
           <Text style={styles.paragraph}>
-            Simple bar chart with sample values.
+            Sample Gdańsk photos from wikipedia.
           </Text>
-          <ChartThree />
+          <List list={this.props.list} />
         </View>
       </View>
     )
   }
 })
 
-export default SceneThree
+export default SceneFour

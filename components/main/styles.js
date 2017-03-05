@@ -17,13 +17,13 @@ var styles = StyleSheet.create({
   },
   navigationItem: {
     fontFamily: 'Verdana',
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '600',
     color: colors.white,
     },
   navigationItemActive: {
     fontFamily: 'Verdana',
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '600',
     color: colors.lightBlue,
   },

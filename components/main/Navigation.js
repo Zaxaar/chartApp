@@ -8,7 +8,7 @@ import styles from './styles'
 
 var Navigation = React.createClass({
 
-  currentRoute: function() {
+  currentRoute: function(){
     let routeStack = this.props.navigator.state.routeStack;
     let currentRouteIndex = routeStack.length-1;
 
@@ -34,15 +34,19 @@ var Navigation = React.createClass({
     return (
       <View style={styles.navigation}>
         <TouchableOpacity onPress={()=>this.navigate('SceneOne')}>
-          <Text style={this.addStyle('SceneOne')}> Chart I</Text>
+          <Text style={this.addStyle('SceneOne')}> Scene I</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=>this.navigate('SceneTwo')}>
-          <Text style={this.addStyle('SceneTwo')}> Chart II</Text>
+          <Text style={this.addStyle('SceneTwo')}> Scene II</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=>this.navigate('SceneThree')}>
-          <Text style={this.addStyle('SceneThree')}> Chart III</Text>
+          <Text style={this.addStyle('SceneThree')}> Scene III</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=>this.navigate('SceneFour')}>
+          <Text style={this.addStyle('SceneFour')}> Scene IV</Text>
         </TouchableOpacity>
       </View>
     )

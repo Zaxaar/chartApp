@@ -10,7 +10,6 @@ let ChartOne = React.createClass({
 
   render: function() {
 
-    console.log(Pie);
 
     let data = [{
       "name": "Bootstrap",
